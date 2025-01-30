@@ -26,17 +26,16 @@ gcc -o text_server text_server.c -pthread
 ## Usage
 1. Start the server:
 ```sh
-./text_server
+./TextAnalysisServer
 ```
 2. Clients can connect and send words to check.
 3. The server provides feedback based on dictionary matches.
 4. Users can add new words to the dictionary if they are missing.
 
 ## Files
-- `text_server.c`: Main server implementation.
+- `TextAnalysisServer.c`: Main server implementation.
 - `basic_english_2000.txt`: Initial dictionary file.
 - `new.txt`: Updated dictionary file after modifications.
-- `client.c`: Example client implementation to communicate with the server.
 
 ## Notes
 - The server supports concurrent word processing using pthreads.
